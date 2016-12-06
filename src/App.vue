@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="main">
-    <mt-header title="Node.js专业中文社区"></mt-header>
     <router-view></router-view>
   </div>
 </template>

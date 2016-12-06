@@ -1,5 +1,6 @@
 <template>
   <div>
+    <mt-header title="Node.js专业中文社区"></mt-header>
     <mt-navbar v-model="active" class="navbar">
       <mt-tab-item
         @click.native="tabSwitch('')"
@@ -36,6 +37,7 @@
         <mt-cell
           class="cell"
           v-for="item in list.all"
+          :to="'/topic/' + item.id"
           is-link>
             <span slot="title">
               <tab :type="item.tab"></tab>
@@ -50,6 +52,7 @@
       <mt-tab-container-item id="good">
         <mt-cell
           class="cell"
+          :to="'/topic/' + item.id"
           v-for="item in list.good"
           is-link>
             <span slot="title">
@@ -65,6 +68,7 @@
       <mt-tab-container-item id="share">
         <mt-cell
           class="cell"
+          :to="'/topic/' + item.id"
           v-for="item in list.share"
           is-link>
             <span slot="title">
@@ -80,6 +84,7 @@
       <mt-tab-container-item id="ask">
         <mt-cell
           class="cell"
+          :to="'/topic/' + item.id"
           v-for="item in list.ask"
           is-link>
             <span slot="title">
@@ -95,6 +100,7 @@
       <mt-tab-container-item id="job">
         <mt-cell
           class="cell"
+          :to="'/topic/' + item.id"
           v-for="item in list.job"
           is-link>
             <span slot="title">
@@ -120,6 +126,7 @@
 </style>
 <script>
   import Tab from './../components/Tab.vue';
+  import {Toast} from 'mint-ui';
   import Vue from 'vue';
   export default{
     data(){
@@ -153,11 +160,16 @@
             page: this.page++
           }
         }).then((res) => {
-          let data = res.body.data;
-          if(data.length <= 0 ){
-            this.isLoad = true;
+          let body = res.body;
+          if(body.success) {
+            let data = res.body.data;
+            if(data.length <= 0 ){
+              this.isLoad = true;
+            }
+            this.list[tab] = this.list[tab].concat(data);
+          } else {
+            Toast('列表获取失败');
           }
-          this.list[tab] = this.list[tab].concat(data);
         })
       }
     },

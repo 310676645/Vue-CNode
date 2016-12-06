@@ -4,9 +4,14 @@
  */
 
 import Topics from './../views/Topics.vue';
+import Topic from './../views/Topic.vue';
 export default [
   {
     path: '/',
     component: Topics
+  },
+  {
+    path: '/topic/:id',
+    component: Topic
   }
 ];
