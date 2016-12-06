@@ -2,7 +2,7 @@
 
 ## 使用技术
 
-Vue2.0 + vue-router + vue-resource + es6 + webpack
+Vue2.0 + vue-router + vue-resource + es6 + mint-ui + webpack
 
 ## 项目运行
 
@@ -18,4 +18,4 @@ npm run buildb
 ```
 
 ## 预览截图
-![](http://ohhqdafpw.bkt.clouddn.com/vue-cnode.gif) 
+![](http://ohhqdafpw.bkt.clouddn.com/vue-cnode.gif)
