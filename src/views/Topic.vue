@@ -56,18 +56,6 @@
           }
         }
     },
-    filters: {
-      createDate(val){
-        if(val) {
-          let valArr = val.split(/T|Z/);
-          let date = valArr[0];
-          let time = valArr[1].split(':');
-          time[2] = Number(time[2]).toFixed(0);
-          return date + '/' + time.join(':');
-        }
-        return val;
-      }
-    },
     created() {
       let id = this.$route.params.id;
       this.$http.get(`topic/${id}`).then((res) => {
