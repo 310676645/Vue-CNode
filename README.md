@@ -14,7 +14,7 @@ npm install
 npm run dev
 
 # 生产环境打包
-npm run buildb
+npm run build
 ```
 
 ## 预览截图
