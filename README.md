@@ -1,18 +1,21 @@
-# cnode
+# vue-cnode使用vue2.0开发的cnode社区
 
-> A Vue.js project
+## 使用技术
 
-## Build Setup
+Vue2.0 + vue-router + vue-resource + es6 + webpack
+
+## 项目运行
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 开发预览,执行命令后浏览器自动打开http://localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
+# 生产环境打包
+npm run buildb
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 预览截图
+[](http://ohhqdafpw.bkt.clouddn.com/vue-cnode.gif)
