@@ -18,4 +18,6 @@ npm run buildb
 ```
 
 ## 预览截图
-![](http://ohhqdafpw.bkt.clouddn.com/vue-cnode.gif)
+>如果截图无法查看，请直接在浏览器中打开此链接 [查看截图](http://ohhqdafpw.bkt.clouddn.com/vue-cnode.gif)
+![截图](http://ohhqdafpw.bkt.clouddn.com/vue-cnode.gif)
+
