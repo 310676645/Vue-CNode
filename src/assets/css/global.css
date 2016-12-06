@@ -7,3 +7,17 @@ body{
   height: 100%;
   background: #f1f1f1;
 }
+.text-center{
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+.show{
+  display: inline-block;
+}
+.list-loading{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
