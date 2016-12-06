@@ -18,4 +18,4 @@ npm run buildb
 ```
 
 ## 预览截图
-[](http://ohhqdafpw.bkt.clouddn.com/vue-cnode.gif)
+![](http://ohhqdafpw.bkt.clouddn.com/vue-cnode.gif) 
