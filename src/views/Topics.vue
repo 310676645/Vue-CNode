@@ -177,7 +177,6 @@
       Tab
     },
     created() {
-      console.log(Vue.http.interceptors);
       Vue.http.interceptors.pop();
       Vue.http.interceptors.push((request, next) => {
         this.loading = true;
